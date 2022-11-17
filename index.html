@@ -1,0 +1,60 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#dfc5b9',
+                    },
+                    fontFamily: {
+                        'Inter': ['Inter', 'sans-serif'],
+                    },
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-Inter">
+    <header class="pt-8">
+        <div class="wrapper">
+            <div class="flex flex-col gap-[20px] items-center justify-center pb-[100px]">
+                <h1 class="text-primary text-[42px] font-bold">
+                    We are information security.
+                </h1>
+                <a href="tel:1234567890" class="font-[600] text-[24px] flex flex-row items-center gap-2">
+                    <svg class="fill-primary" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <path
+                            d="M19.95 21q-3.225 0-6.287-1.438-3.063-1.437-5.425-3.8-2.363-2.362-3.8-5.425Q3 7.275 3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.225t.325.575l.65 3.5q.05.35-.012.637-.063.288-.288.513L7 10.9q1.05 1.8 2.625 3.375T13.1 17l2.35-2.35q.225-.225.588-.338.362-.112.712-.062l3.45.7q.35.075.575.337.225.263.225.613v4.05q0 .45-.3.75t-.75.3Z" />
+                    </svg>
+                    +1 (234) 567-8910
+                </a>
+            </div>
+            <div class="flex flex-row gap-[90px] items-center justify-center">
+                <div>
+                    <img class="w-[300px] h-[300px] rounded-full" src="src/img/avatar.jpeg" alt="avatar">
+                </div>
+                <div class="flex flex-col gap-[20px] items-start">
+                    <h3 class="text-primary text-[22px] uppercase font-bold">Location</h3>
+                    <p class="max-w-[270px] w-full text-[20px]">121 Rock Street, 21 Avenue, New York, NY 92103-9000</p>
+                    <hr class="h-3 bg-slate-700 w-full max-w-[270px]">
+                    <p class="max-w-[370px] w-full text-[18px]">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
